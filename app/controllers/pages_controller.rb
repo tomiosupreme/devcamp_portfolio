@@ -1,10 +1,7 @@
 class PagesController < ApplicationController
   def home
     @posts = Blog.all
-<<<<<<< HEAD
-=======
-    @Skills = Skill.all
->>>>>>> model-generator
+    @skills = Skill.all
   end
 
   def about
