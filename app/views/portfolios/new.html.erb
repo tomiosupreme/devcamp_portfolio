@@ -1,6 +1,7 @@
 <h1>Create a new portfolio item</h1>
 
-<%= form_for(-@portfolio_item) do |f| %>
+<%= form_for(@portfolio_items) do |f| %>
+
   <div class="field">
     <%= f.label :title %>
     <%= f.text_field :title, id: :blog_title %>
