@@ -1,6 +1,6 @@
 10.times do |blog|
     Blog.create!(
-        title:"My Blog Post #{Blog}",
+        title:"My Blog Post #{blog}",
         body: "Sed ut perspiciatis unde omnis iste natus error sit 
         voluptatem accusantium doloremque laudantium, totam rem aperiam,
         eaque ipsa quae ab illo inventore veritatis et quasi architecto 
@@ -18,7 +18,7 @@
       )
 end
 
-puts "10 blog posts created"
+puts "10 stupid files created"
 
 5.times do |skill|
     Skill.create!(
