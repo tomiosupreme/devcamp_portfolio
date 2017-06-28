@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20170627172456) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "slug"
-    t.integer "status"
+    t.integer "status", default: 0
     t.index ["slug"], name: "index_blogs_on_slug", unique: true
   end
 
@@ -38,8 +38,7 @@ ActiveRecord::Schema.define(version: 20170627172456) do
     t.string "title"
     t.string "subtitle"
     t.text "body"
-    t.string "main_image"
-    t.string "text"
+    t.text "main_image"
     t.text "thumb_image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
