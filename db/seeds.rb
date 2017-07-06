@@ -26,7 +26,7 @@ puts "3 topics created"
     )
 end
 
-puts "10 stupid files created"
+puts "10 blogs created"
 
 # 5.times do |skill|
 #     Skill.create!(
@@ -71,3 +71,12 @@ end
     end
     
     puts "9 portfolio items created"
+    
+    3.times do |technology|
+  Portfolio.last.technologies.create!(
+    name: "Technology #{technology}",
+    portfolio_id: Portfolio.last.id
+ )
+end
+
+puts "3 technologies created"
