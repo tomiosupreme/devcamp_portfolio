@@ -1,5 +1,6 @@
 class PortfoliosController < ApplicationController
   layout 'portfolio'
+  
   def index
     @portfolio_items = Portfolio.all
   end
@@ -27,7 +28,7 @@ class PortfoliosController < ApplicationController
 
   def edit
     @portfolio_item = Portfolio.find(params[:id])
-     3.times { @portfolio_item.technologies.build }
+
   end
 
   def update
@@ -58,10 +59,10 @@ class PortfoliosController < ApplicationController
       format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
   end
-  
+
   private
-  
-    def portfolio_params
+
+  def portfolio_params
     params.require(:portfolio).permit(:title,
                                       :subtitle,
                                       :body,
