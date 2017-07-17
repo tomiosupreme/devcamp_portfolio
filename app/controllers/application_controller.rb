@@ -4,4 +4,9 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserConcern
   include DefaultPageContent
+    before_action :set_copyright
+  
+  def set_copyright
+    @copyright = FranklynViewTool::Renderer.copyright 'Lucas Franklyn', 'all rights reserved'
+  end
 end
