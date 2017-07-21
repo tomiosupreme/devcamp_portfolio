@@ -166,14 +166,12 @@ body {
  */
 
 .card-block {
-  padding: 20px;
   color: black;
   text-align: left;
 }
 
 .auth-links a {
   color: black;
-  text-align: left;
 }
 
 .register-text {
@@ -184,5 +182,9 @@ body {
   width: 22rem;
   margin: 0 auto;
   float: none;
-  margin-bottom: 10px; 
+}
+
+.app-nav span {
+  margin-left: 10px;
+  margin-right: 10px;
 }
