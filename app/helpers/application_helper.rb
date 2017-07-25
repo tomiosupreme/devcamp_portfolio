@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    FranklynViewTool::Renderer.copyright 'Jordan Hudgens', 'All rights reserved'
+    FranklynViewTool::Renderer.copyright 'Lucas Franklyn', 'All rights reserved'
   end
 
   def nav_items
